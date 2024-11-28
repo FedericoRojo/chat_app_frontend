@@ -1,0 +1,216 @@
+/* General container for the chat app */
+.chat-page-container {
+    display: grid;
+    height: 100vh; 
+    grid-template-columns: 1fr 4fr;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Left chat list panel */
+.chat-p-chats {
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+/* Header for the chat list */
+.chat-p-chats-header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+.chat-p-chats-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+/* Content section in chat list */
+.chat-p-chats-content {
+    padding: 10px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Search bar */
+.search-chat form {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.search-chat input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-chat button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-chat button:hover {
+    background-color: #0056b3;
+}
+
+/* Chat cards in the list */
+.chats-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.chats-card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.chats-card h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.chats-card button {
+    margin-left: auto;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.chats-card button:hover {
+    background-color: #218838;
+}
+
+/* Footer buttons for chat list */
+.chat-p-chats-buttons {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+.chat-p-chats-buttons button {
+    flex: 1;
+    padding: 10px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.chat-p-chats-buttons button:hover {
+    background-color: #5a6268;
+}
+
+/* Right chat content pane */
+.chat-content-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    overflow: auto;
+}
+
+/* Chat header */
+.chat-header {
+    height: 60px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+/* Chat content */
+.chat-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* Individual message card */
+.chat-message-card {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+/* Message input area */
+.chat-create-message {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+.chat-create-message form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chat-create-message textarea {
+    flex: 1;
+    resize: none;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 80px;
+}
+
+.chat-create-message button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.chat-create-message button:hover {
+    background-color: #0056b3;
+}
+
+/* Group creation section */
+.chat-group-creator {
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
